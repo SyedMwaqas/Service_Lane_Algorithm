@@ -1,0 +1,90 @@
+#include<stdio.h>
+#include<iostream>
+#include <cstring>
+#include<math.h>
+#include <string> 
+using namespace std;
+
+
+int main(){
+    
+    
+long long int n,j=0,cnt2=0,cnt1=1,t=0,a,k=0,n1=0,n2,sav,e,score,index=0,r=0,sum=0,b;
+      long long int x[100000],y[10000],z[10000],w,bc,wc,c,s[10000];
+
+    int min=1000,mins=1000;
+
+    char str[1000],str1[1000][1000],str2[1000][1000]; 
+     
+   int len; 
+
+    long long int d,i,cnt=1;
+    
+  //  printf("enter value");
+    scanf("%d",&n);
+    
+   // printf("enter value");
+    scanf("%d",&d);
+    
+
+
+
+   for(i=0;i<n;i++){
+       
+       
+       cin>>x[i];
+       
+   }
+   
+ //  printf("ranges:");
+     
+     for(i=0;i<d;i++){
+       
+       
+       cin>>y[i];
+       cin>>z[i];
+       
+   }
+     
+     
+     
+     
+     for(i=0;i<d;i++){
+         
+     a=y[i];
+     b=z[i];
+     
+     
+     for(j=a;j<=b;j++){
+         
+         
+         
+         if(min>x[j]){
+             
+             min=x[j];
+             
+             
+             
+         }
+         
+         
+     }
+     
+         s[cnt2]=min;
+             cnt2++;
+         min=1000;
+         
+     }
+     
+     
+     
+   for(i=0;i<cnt2;i++){
+       
+       
+       cout<<s[i]<<"\n";
+       
+   }
+
+   
+    
+}
